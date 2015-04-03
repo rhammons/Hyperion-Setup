@@ -50,27 +50,27 @@
 				"leds" : "*",
 				"hsv" :
 				{
-					"saturationGain" : 0.900,
+					"saturationGain" : 1.000,
 					"valueGain"      : 0.6500
 				},
 				"red" :
 				{
 					"threshold"  : 0.0000,
-					"gamma"      : 0.9000,
+					"gamma"      : 0.9250,
 					"blacklevel" : -0.1000,
 					"whitelevel" : 1.0000
 				},
 				"green" :
 				{
 					"threshold"  : 0.0000,
-					"gamma"      : 0.9000,
+					"gamma"      : 1.000,
 					"blacklevel" : -0.1000,
 					"whitelevel" : 1.0000
 				},
 				"blue" :
 				{
 					"threshold"  : 0.0000,
-					"gamma"      : 0.9000,
+					"gamma"      : 0.9500,
 					"blacklevel" : -0.1000,
 					"whitelevel" : 1.0000
 				}
@@ -78,8 +78,8 @@
 		],
 		"smoothing" :
 		{
-			"type"            : "none",
-			"time_ms"         : 200,
+			"type"            : "linear",
+			"time_ms"         : 24,
 			"updateFrequency" : 20.0000
 		}
 	},
@@ -97,53 +97,53 @@
 	[
 		{
 			"index" : 0,
-			"hscan" : { "minimum" : 0.9500, "maximum" : 1.0000 },
-			"vscan" : { "minimum" : 0.6667, "maximum" : 1.0000 }
+			"hscan" : { "minimum" : 0.7375, "maximum" : 1.0000 },
+			"vscan" : { "minimum" : 0.8800, "maximum" : 1.0000 }
 		},
 		{
 			"index" : 1,
-			"hscan" : { "minimum" : 0.9500, "maximum" : 1.0000 },
-			"vscan" : { "minimum" : 0.3333, "maximum" : 0.6667 }
+			"hscan" : { "minimum" : 0.8800, "maximum" : 1.0000 },
+			"vscan" : { "minimum" : 0.4750, "maximum" : 1.0000 }
 		},
 		{
 			"index" : 2,
-			"hscan" : { "minimum" : 0.9500, "maximum" : 1.0000 },
-			"vscan" : { "minimum" : 0.0000, "maximum" : 0.3333 }
+			"hscan" : { "minimum" : 0.8800, "maximum" : 1.0000 },
+			"vscan" : { "minimum" : 0.0000, "maximum" : 0.5250 }
 		},
 		{
 			"index" : 3,
-			"hscan" : { "minimum" : 0.7500, "maximum" : 1.0000 },
-			"vscan" : { "minimum" : 0.0000, "maximum" : 0.0800 }
+			"hscan" : { "minimum" : 0.7375, "maximum" : 1.0000 },
+			"vscan" : { "minimum" : 0.0000, "maximum" : 0.1200 }
 		},
 		{
 			"index" : 4,
-			"hscan" : { "minimum" : 0.5000, "maximum" : 0.7500 },
-			"vscan" : { "minimum" : 0.0000, "maximum" : 0.0800 }
+			"hscan" : { "minimum" : 0.4875, "maximum" : 0.7625 },
+			"vscan" : { "minimum" : 0.0000, "maximum" : 0.1200 }
 		},
 		{
 			"index" : 5,
-			"hscan" : { "minimum" : 0.2500, "maximum" : 0.5000 },
-			"vscan" : { "minimum" : 0.0000, "maximum" : 0.0800 }
+			"hscan" : { "minimum" : 0.2375, "maximum" : 0.5125 },
+			"vscan" : { "minimum" : 0.0000, "maximum" : 0.1200 }
 		},
 		{
 			"index" : 6,
-			"hscan" : { "minimum" : 0.0000, "maximum" : 0.2500 },
-			"vscan" : { "minimum" : 0.0000, "maximum" : 0.0800 }
+			"hscan" : { "minimum" : 0.0000, "maximum" : 0.2625 },
+			"vscan" : { "minimum" : 0.0000, "maximum" : 0.1200 }
 		},
 		{
 			"index" : 7,
-			"hscan" : { "minimum" : 0.0000, "maximum" : 0.0500 },
-			"vscan" : { "minimum" : 0.0000, "maximum" : 0.3333 }
+			"hscan" : { "minimum" : 0.0000, "maximum" : 0.1200 },
+			"vscan" : { "minimum" : 0.0000, "maximum" : 0.5250 }
 		},
 		{
 			"index" : 8,
-			"hscan" : { "minimum" : 0.0000, "maximum" : 0.0500 },
-			"vscan" : { "minimum" : 0.3333, "maximum" : 0.6667 }
+			"hscan" : { "minimum" : 0.0000, "maximum" : 0.1200 },
+			"vscan" : { "minimum" : 0.4750, "maximum" : 1.0000 }
 		},
 		{
 			"index" : 9,
-			"hscan" : { "minimum" : 0.0000, "maximum" : 0.0500 },
-			"vscan" : { "minimum" : 0.6667, "maximum" : 1.0000 }
+			"hscan" : { "minimum" : 0.0000, "maximum" : 0.2625 },
+			"vscan" : { "minimum" : 0.8800, "maximum" : 1.0000 }
 		}
 	],
 
@@ -228,12 +228,12 @@
         "standard" : "NTSC",
         "width" : 640,
         "height" : 480,
-        "frameDecimation" : 2,
-        "sizeDecimation" : 8,
+        "frameDecimation" : 4,
+        "sizeDecimation" : 4,
         "priority" : 1100,
         "mode" : "2D",
-        "cropLeft" : 22,
-        "cropRight" : 22,
+        "cropLeft" : 20,
+        "cropRight" : 20,
         "cropTop" : 20,
         "cropBottom" : 20,
         "redSignalThreshold" : 0.1,
